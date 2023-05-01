@@ -5,16 +5,11 @@ using UnityEngine.UI;
 
 namespace StageInfo
 {
-    enum StageName
-    {
-        Proscenium, CentralStage, ThrustStage, 
-    }
-
     public class StageList
     {
         // Stage names
         public string[] Name = new string[3] {
-            "演唱會舞台", "開放式舞台", "其他"};
+            "鏡框式舞台", "圓形劇場", "開放式舞台"};
 
         // Stage images
         public RawImage []rawImage = new RawImage[3];
@@ -60,6 +55,8 @@ namespace StageInfo
         public int []TimesPractice = new int[3] {
             1, 2, 3
         };
+
+        public AudioSource []audioSource = new AudioSource[3];
 
         public int GetLength()
         {
